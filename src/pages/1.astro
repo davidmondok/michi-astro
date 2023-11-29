@@ -2,12 +2,143 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 ---
-
 <Layout title="Welcome to Astro.">
-    <h1>HTML CODE</h1>
-    <div></div>
+
+    <div class="container-Layout">
+        <div class="flex-container">
+
+            <div class="flex-item">
+                <h3>Health Insurance</h3>
+                <p class="text">Cover your loved ones from in and out, from normal injuries to operations.</p>
+            </div>
+
+            <div class="flex-item">
+                <h3>Education Insurance</h3>
+                <p class="text">Give your child a brighter future with a definite education.</p>
+            </div>
+
+            <div class="flex-item">
+                <h3>Vehicle Insurance</h3>
+                <p class="text">We will cover your vehicle if it's still 50% of the body undamaged.</p>
+            </div>
+
+            <div class="flex-item">
+                <h3>Financial Insurance</h3>
+                <p class="text">Ensure your money is kept safe and sound, so you can relax.</p>
+            </div>
+
+            <div class="item">
+                <p class="service">Services</p>
+                <h1 class="h1">We Promise, We Will Protect<br>You from In and Out</h1>
+                <p class="p1">In 5 years of experience, our best seller of all services are the ones you can see on
+                    the right side of the website.</p>
+            </div>
+                <p class="button-container">
+                    <button class="button">Choose a Package</button>
+                </p>
+            </div>
+        </div>
 </Layout>
 
 <style>
-    // Hier kommt CSS
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .container-Layout {
+       // width:;
+        //height:;
+        //padding:;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        width: 1500px;
+        height: 528px;
+        flex-shrink: 0;
+    }
+
+    .flex-item {
+        display: flex;
+        width: 250px;
+        padding: 36px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 26px;
+        border-radius: 16px;
+        background: #FFF;
+        box-shadow: 0 15px 30px 0 rgba(43, 43, 43, 0.04);
+    }
+
+    .service {
+        color: #1A1A1A;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.18px;
+        text-transform: uppercase;
+        opacity: 0.5;
+    }
+
+    .item {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 32px;
+    }
+
+    .h1 {
+        color: #1A1A1A;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 46px;
+        letter-spacing: -0.36px;
+    }
+
+    .button {
+        display: flex;
+        padding: 16px 32px;
+        justify-content: center;
+        align-items: center;
+        border: solid 3px;
+        border-radius: 32px;
+        background: #FF6703;
+        color: #FFF;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-decoration-line: underline;
+    }
+
+    .p1 {
+        color: #1A1A1A;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0.16px;
+        opacity: 0.7;
+    }
+
+    .text {
+        color: #1A1A1A;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.14px;
+        opacity: 0.5;
+    }
+
 </style>

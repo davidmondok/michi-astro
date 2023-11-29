@@ -1,0 +1,133 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+---
+
+<Layout title="Welcome to Astro2">
+  <div class="container-Layout">
+    <div class="container-main">
+      <div class="container-partners">
+        <p class="partners">Partners</p>
+        <h1 class="header">Together we can build a healthier world</h1>
+        <p class="txt">
+          Lets build a healthier wold with us, we already cooperated with
+          numerous giant companies such as Microsoft, Apple, Google, Paypal, and
+          many more.
+        </p>
+        <div class="container-box">
+          <div class="box1">20K+ <p class="box1txt">SATISFIED CLIENTS</p></div>
+          <div class="box2">100+ <p class="box2txt">GIANT COMPANIES</p></div>
+          <div class="box3">13+ <p class="box3txt">AWARD WON</p></div>
+        </div>
+        <p class="button-container">
+          <button class="button">Learn More</button>
+        </p>
+      </div>
+      <img src="berge.webp" />
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .container-Layout {
+    display: flex;
+    //width: 1440px;
+    padding: 115px 70px 114px 70px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-main {
+    display: flex;
+    //width: 1300px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  .container-partners {
+    display: flex;
+    //width: 550px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    //flex-shrink: 0;
+  }
+
+  .partners {
+    color: #1a1a1a;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.18px;
+    text-transform: uppercase;
+    opacity: 0.5;
+  }
+
+  .header {
+    color: #1a1a1a;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 46px;
+    letter-spacing: -0.36px;
+  }
+
+  .button {
+    display: flex;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border: solid 3px;
+    border-radius: 32px;
+    background: #ff6703;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration-line: underline;
+  }
+
+  .txt {
+    color: #1a1a1a;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.16px;
+    opacity: 0.7;
+  }
+
+  .container-box {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+  }
+
+  .box1,
+  .box2,
+  .box3 {
+    color: #029196;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.32px;
+  }
+
+  .box1txt,
+  .box2txt,
+  .box3txt {
+    color: #1a1a1a;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.12px;
+    text-transform: uppercase;
+    opacity: 0.5;
+  }
+</style>

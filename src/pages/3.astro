@@ -206,60 +206,66 @@ import Layout from "../layouts/Layout.astro";
 
       <div class="commercial-card-alignment">
         <div class="commercial-card">
-          <span class="icon-card">ICON</span>
-          <h1 class="card-h1">Commercial Electrical</h1>
-          <span class="title-orange-under">Omare sit amet eit</span>
-          <p class="cards-txt">Start From</p>
-          <p class="price-orange">$40</p>
-          <p class="cards-txt">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo
-          </p>
-          <p>
-            <button class="card-button card-button-txt">Contact Us</button>
-          </p>
-          <p class="cards-txt">
-            *Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-            tellus.
-          </p>
+          <div class="alignment-in-card">
+            <span class="icon-card">ICON</span>
+            <h1 class="card-h1">Commercial Electrical</h1>
+            <span class="title-orange-under">Omare sit amet eit</span>
+            <p class="cards-txt">Start From</p>
+            <p class="price-orange">$40</p>
+            <p class="cards-txt">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo
+            </p>
+            <p>
+              <button class="card-button card-button-txt">Contact Us</button>
+            </p>
+            <p class="cards-txt-bottom">
+              *Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus.
+            </p>
+          </div>
         </div>
 
         <div class="commercial-card bg-blue">
-          <span class="icon-card">ICON</span>
-          <h1 class="card-h1-blue">Industrial Electrical</h1>
-          <span class="title-orange-under">Omare sit amet eit</span>
-          <p class="cards-txt-white">Start From</p>
-          <p class="price-orange">$40</p>
-          <p class="cards-txt-white">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo
-          </p>
-          <p>
-            <button class="card-button card-button-txt">Contact Us</button>
-          </p>
-          <p class="cards-txt-white">
-            *Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-            tellus.
-          </p>
+          <div class="alignment-in-card">
+            <span class="icon-card">ICON</span>
+            <h1 class="card-h1-blue">Industrial Electrical</h1>
+            <span class="title-orange-under">Omare sit amet eit</span>
+            <p class="cards-txt-white">Start From</p>
+            <p class="price-orange">$40</p>
+            <p class="cards-txt-white">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo
+            </p>
+            <p>
+              <button class="card-button card-button-txt">Contact Us</button>
+            </p>
+            <p class="cards-txt-white-bottom">
+              *Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus.
+            </p>
+          </div>
         </div>
 
         <div class="commercial-card">
-          <span class="icon-card">ICON</span>
-          <h1 class="card-h1">Residential Electrical</h1>
-          <span class="title-orange-under">Omare sit amet eit</span>
-          <p class="cards-txt">Start From</p>
-          <p class="price-orange">$40</p>
-          <p class="cards-txt">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo
-          </p>
-          <p>
-            <button class="card-button card-button-txt">Contact Us</button>
-          </p>
-          <p class="cards-txt">
-            *Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-            tellus.
-          </p>
+          <div class="alignment-in-card">
+            <span class="icon-card">ICON</span>
+            <h1 class="card-h1">Residential Electrical</h1>
+            <span class="title-orange-under">Omare sit amet eit</span>
+            <p class="cards-txt">Start From</p>
+            <p class="price-orange">$40</p>
+            <p class="cards-txt">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo
+            </p>
+            <p>
+              <button class="card-button card-button-txt">Contact Us</button>
+            </p>
+            <p class="cards-txt-bottom">
+              *Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -267,6 +273,23 @@ import Layout from "../layouts/Layout.astro";
 </Layout>
 
 <style>
+  .cards-txt-bottom {
+    color: #7e7e7e;
+    text-align: center;
+    font-family: Inter serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    max-width: 300px;
+    margin-bottom: 32px;
+  }
+  .alignment-in-card {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    align-items: center;
+  }
   .container-test {
     display: flex;
     flex-direction: row;
@@ -330,10 +353,19 @@ import Layout from "../layouts/Layout.astro";
     font-style: normal;
     font-weight: 600;
     line-height: 119.5%;
-    margin-top: 24px;
-    margin-bottom: 8px;
   }
 
+  .cards-txt-white-bottom {
+    color: #ffffff;
+    text-align: center;
+    font-family: Inter serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    max-width: 300px;
+    margin-bottom: 32px;
+  }
   .cards-txt-white {
     color: #ffffff;
     text-align: center;
@@ -342,11 +374,7 @@ import Layout from "../layouts/Layout.astro";
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
-    max-width: 376px;
-    margin-top: 32px;
-    margin-bottom: 32px;
-    margin-left: 37px;
-    margin-right: 37px;
+    max-width: 300px;
   }
 
   .bg-blue {
@@ -360,8 +388,7 @@ import Layout from "../layouts/Layout.astro";
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
-    width: 300px;
-    margin: 32px 80px;
+    max-width: 300px;
   }
   .title-orange-under {
     color: #f77f00;
@@ -370,12 +397,10 @@ import Layout from "../layouts/Layout.astro";
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
-    line-height: 100%;
   }
   .icon-card {
     display: block;
     margin-top: 50px;
-    margin-left: 190px;
     width: 72px;
     height: 66px;
   }
@@ -387,8 +412,6 @@ import Layout from "../layouts/Layout.astro";
     font-style: normal;
     font-weight: 600;
     line-height: 119.5%;
-    margin-top: 24px;
-    margin-bottom: 8px;
   }
 
   .commercial-card-alignment {
@@ -517,6 +540,7 @@ import Layout from "../layouts/Layout.astro";
   }
 
   .button {
+    margin-top: 32px;
     background: #f77f00;
     color: #fff;
     font-family: Inter, serif;
@@ -524,8 +548,8 @@ import Layout from "../layouts/Layout.astro";
     font-style: normal;
     font-weight: 600;
     line-height: 100%;
-    width: 25%;
-    height: 12.5%;
+    width: 184px;
+    height: 48px;
   }
 
   .project-container {
@@ -553,10 +577,10 @@ import Layout from "../layouts/Layout.astro";
   }
 
   .container-with-four-items {
-    padding-top: 32px;
+    margin-top: 16px;
     display: flex;
     flex-flow: row wrap;
-    gap: 40px 30px;
+    gap: 30px 30px;
   }
 
   .h1-from-left {
@@ -567,7 +591,7 @@ import Layout from "../layouts/Layout.astro";
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    padding-top: 8px;
+    margin-top: 8px;
   }
 
   .rework-text {
@@ -578,7 +602,7 @@ import Layout from "../layouts/Layout.astro";
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
-    padding-top: 30px;
+    margin-top: 16px;
     opacity: 80%;
   }
 

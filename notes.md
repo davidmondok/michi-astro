@@ -1,0 +1,21 @@
+- alignment-in-card 
+- container-test container-for-flex
+- title-orange-pricing
+- container-around-alignment-exp 
+- logos-in-dark-blue
+- around-the-dark-blue commercial-card-alignment
+- container-with-four-elements 
+- rectangle-residential
+- container-around-exp
+- container-with-four-items
+
+# Web Safe Fonts
+- Arial (sans-serif)
+- Verdana (sans-serif)
+- Tahoma (sans-serif)
+- Trebuchet MS (sans-serif)
+- Times New Roman (serif)
+- Georgia (serif)
+- Garamond (serif)
+- Courier New (monospace)
+- Brush Script MT (cursive)

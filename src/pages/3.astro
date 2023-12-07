@@ -5,10 +5,13 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="Welcome to Astro 3">
   <div class="section section-with-bg bg-light-grey">
     <div class="container">
-      <div class="section-header">
-        <span class="title-orange-first orange">Our Expertise</span>
-        <h1 class="h1-width i-style">The Field On Wich We Give Services</h1>
-        <p class="text grey">
+      <div class="section-header section-header--lg">
+        <span class="section-header__overline text-darkorange"
+          >Our Expertise</span
+        >
+        <h1 class="">The Field On Wich We Give Services</h1>
+        <span class="divider"></span>
+        <p class="">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
           vulputate, dui quis semper consequat, tellus augue fringilla orci, non
           fermentum neque nunc id nibh.
@@ -217,9 +220,9 @@ import Layout from "../layouts/Layout.astro";
             <span class="title-orange-under orange h-style"
               >Omare sit amet eit</span
             >
-            <p class="cards-txt grey p-style">Start From</p>
+            <p class="cards-txt max-width grey p-style">Start From</p>
             <p class="price-orange orange r-style">$40</p>
-            <p class="cards-txt grey p-style">
+            <p class="cards-txt max-width grey p-style">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
               tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo
             </p>
@@ -229,7 +232,7 @@ import Layout from "../layouts/Layout.astro";
                 >Contact Us</button
               >
             </p>
-            <p class="cards-txt-bottom grey p-style">
+            <p class="cards-txt-bottom max-width grey p-style">
               *Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
               tellus.
             </p>
@@ -245,9 +248,9 @@ import Layout from "../layouts/Layout.astro";
             <span class="title-orange-under orange h-style"
               >Omare sit amet eit</span
             >
-            <p class="cards-txt-white white p-style">Start From</p>
+            <p class="cards-txt-white max-width white p-style">Start From</p>
             <p class="price-orange orange r-style">$40</p>
-            <p class="cards-txt-white white p-style">
+            <p class="cards-txt-white max-width white p-style">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
               tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo
             </p>
@@ -257,7 +260,7 @@ import Layout from "../layouts/Layout.astro";
                 >Contact Us</button
               >
             </p>
-            <p class="cards-txt-white-bottom white p-style">
+            <p class="cards-txt-white-bottom max-width white p-style">
               *Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
               tellus.
             </p>
@@ -271,9 +274,9 @@ import Layout from "../layouts/Layout.astro";
             <span class="title-orange-under h-style orange"
               >Omare sit amet eit</span
             >
-            <p class="cards-txt grey p-style">Start From</p>
+            <p class="cards-txt max-width grey p-style">Start From</p>
             <p class="price-orange orange r-style">$40</p>
-            <p class="cards-txt grey p-style">
+            <p class="cards-txt max-width grey p-style">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
               tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo
             </p>
@@ -283,7 +286,7 @@ import Layout from "../layouts/Layout.astro";
                 >Contact Us</button
               >
             </p>
-            <p class="cards-txt-bottom grey p-style">
+            <p class="cards-txt-bottom max-width grey p-style">
               *Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
               tellus.
             </p>
@@ -295,6 +298,95 @@ import Layout from "../layouts/Layout.astro";
 </Layout>
 
 <style>
+  body {
+    font-size: 16px;
+    font-family: "Times New Roman", serif;
+    font-weight: normal;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: Arial, sans-serif;
+    line-height: 1.2;
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  .divider {
+    display: block;
+    height: 1px;
+    width: 100px;
+    background: black;
+    margin: 24px auto;
+  }
+
+  .section-header {
+    margin-bottom: 32px;
+  }
+
+  .box {
+    padding: 48px;
+  }
+
+  .box--dark {
+  }
+
+  .section-header.section-header--centered {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 768px;
+  }
+
+  .section-header h1,
+  .section-header h2 {
+    margin-bottom: 16px;
+    color: darkblue;
+  }
+
+  .section-header.section-header--lg h1,
+  .section-header.section-header--lg h2 {
+    font-size: 64px;
+  }
+
+  .section-header.section-header--contrast {
+    color: white;
+  }
+
+  .section-header .section-header__overline {
+    color: darkorange;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .section-header p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .pricing-box {
+  }
+
+  .pricing-box.pricing-box--main {
+    color: white;
+    background-color: darkblue;
+  }
+
+  .display-flex {
+    display: flex;
+  }
+  .max-width {
+    max-width: 300px;
+  }
   .h1-width,
   .h1-experience,
   .h1-from-left,
@@ -347,23 +439,16 @@ import Layout from "../layouts/Layout.astro";
   }
   .cards-txt-bottom {
     margin-bottom: 32px;
-    max-width: 300px;
   }
   .alignment-in-card {
-    display: flex;
     gap: 24px;
     flex-direction: column;
     align-items: center;
   }
   .container-test {
-    display: flex;
     flex-direction: row;
   }
-  .container-for-flex {
-    display: flex;
-  }
   .title-orange-pricing {
-    display: flex;
     justify-content: center;
     text-align: center;
     font-family: Poppins, serif;
@@ -383,19 +468,16 @@ import Layout from "../layouts/Layout.astro";
     left: 150px;
   }
   .container-around-alignment-exp {
-    display: flex;
     width: 85%;
     gap: 100px;
   }
   .logos-in-dark-blue {
-    display: flex;
     justify-content: center;
     align-items: center;
     width: 330px;
     height: 94px;
   }
   .around-the-dark-blue {
-    display: flex;
     justify-content: center;
   }
   .card-h1-blue {
@@ -405,14 +487,6 @@ import Layout from "../layouts/Layout.astro";
   }
   .cards-txt-white-bottom {
     margin-bottom: 32px;
-    max-width: 300px;
-  }
-  .cards-txt-white {
-    max-width: 300px;
-  }
-
-  .cards-txt {
-    max-width: 300px;
   }
   .title-orange-under {
     text-align: center;
@@ -429,7 +503,6 @@ import Layout from "../layouts/Layout.astro";
     line-height: 119.5%;
   }
   .commercial-card-alignment {
-    display: flex;
     gap: 30px;
   }
   .commercial-card {
@@ -458,7 +531,6 @@ import Layout from "../layouts/Layout.astro";
     text-transform: uppercase;
   }
   .container-with-four-elements {
-    display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
     justify-content: center;
@@ -466,7 +538,6 @@ import Layout from "../layouts/Layout.astro";
     width: 130%;
   }
   .rectangle-residential {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -474,15 +545,13 @@ import Layout from "../layouts/Layout.astro";
     height: 150px;
   }
   .container-around-exp {
-    display: flex;
     flex-flow: column wrap;
   }
-  .container-alignment-exp-left {
-    width: 50%;
-  }
+  .container-alignment-exp-left,
   .container-alignment-exp-right {
     width: 50%;
   }
+
   .h1-experience {
     margin-bottom: 36px;
     max-width: 460px;
@@ -505,7 +574,6 @@ import Layout from "../layouts/Layout.astro";
   }
   .container-with-four-items {
     margin-top: 16px;
-    display: flex;
     flex-flow: row wrap;
     gap: 30px 30px;
   }
